@@ -1,2 +1,2 @@
-/parser.h.gch
-/token.h.gch
+# Precompiled Headers
+*.gch
