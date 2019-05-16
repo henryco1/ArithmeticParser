@@ -37,14 +37,14 @@ In short, CFGs are composed of nonterminal symbols and terminal symbols. Termina
 
 This program is made up of separate methods that follow a rule in an expression's context-free grammar. The CFG of the parser is as follows:
 
-> expr -> term add-op term 
-> term -> factor mult-op factor 
-> factor -> sign item func-op factor 
-> item -> (expr) | number 
-> add-op -> + | - 
-> mult-op -> * | / 
-> sign -> - | Ø 
-> func-op -> ^ 
-> number -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | .
+    expr -> term add-op term 
+    term -> factor mult-op factor  
+    factor -> sign item func-op factor  
+    item -> (expr) | number 
+    add-op -> + | - 
+    mult-op -> * | /  
+    sign -> - | Ø  
+    func-op -> ^  
+    number -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | .
 
 The parser will also do error checking for invalid inputs. The program can deal with whitespaces, missing parentheses, and invalid characters like an @ sign or a letter. 
